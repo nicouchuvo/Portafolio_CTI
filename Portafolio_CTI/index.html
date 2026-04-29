@@ -252,14 +252,30 @@ window.addEventListener('scroll', () => {
 
 /* PDF */
 function openPDF(file){
-    document.getElementById('modal').style.display='flex';
-    document.getElementById('viewer').src=file;
+    document.getElementById('modal').style.display = 'flex';
+    document.getElementById('viewer').src = file;
 }
 
+/* cerrar modal */
 function closeModal(){
-    document.getElementById('modal').style.display='none';
+    document.getElementById('modal').style.display = 'none';
+    document.getElementById('viewer').src = "";
 }
+
+/* cerrar al hacer click afuera */
+document.getElementById('modal').addEventListener('click', function(e){
+    if(e.target === this){
+        closeModal();
+    }
+});
+
+/* cerrar con ESC */
+document.addEventListener('keydown', function(e){
+    if(e.key === "Escape"){
+        closeModal();
+    }
+});
 </script>
 
 </body>
-</html>
+</html> 
