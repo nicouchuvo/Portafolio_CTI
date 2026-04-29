@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portafolio CTI</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
+}
+
+/* NAVBAR */
+nav {
+    position: fixed;
+    width: 100%;
+    background: #0f172a;
+    padding: 15px;
+    text-align: center;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(135deg, #3b82f6, #06b6d4);
+    color: white;
+    text-align: center;
+    padding: 120px 20px 80px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+/* SECCIONES */
+section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+h2 {
+    color: #2563eb;
+    margin-bottom: 20px;
+}
+
+/* TARJETAS */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* BOTONES */
+.buttons {
+    margin-top: 10px;
+}
+
+.button {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 15px;
+    background: #3b82f6;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background: #1d4ed8;
+}
+
+/* FOOTER */
+footer {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+    <a href="#intro">Inicio</a>
+    <a href="#proyecto">Proyecto</a>
+    <a href="#evidencias">Evidencias</a>
+    <a href="#conclusion">Conclusión</a>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>Portafolio CTI</h1>
+    <p>Aplicación móvil para gestión de incidencias urbanas</p>
+    <p><strong>TU NOMBRE</strong></p>
+</div>
+
+<!-- INTRO -->
+<section id="intro">
+    <h2>📌 Introducción</h2>
+    <p>
+        Este portafolio documenta el desarrollo de un proyecto enfocado en la creación de una aplicación móvil
+        con geolocalización, cuyo propósito es optimizar la gestión de incidencias urbanas. 
+        Se busca mejorar la comunicación entre ciudadanos y entidades públicas mediante el uso de tecnología,
+        contribuyendo a una gestión más eficiente del entorno urbano.
+    </p>
+</section>
+
+<!-- PROYECTO -->
+<section id="proyecto">
+    <h2>🚀 Desarrollo del Proyecto</h2>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Problema</h3>
+            <p>
+                La gestión de incidencias urbanas presenta dificultades debido a la falta de herramientas digitales,
+                generando desorganización y baja participación ciudadana.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Objetivo</h3>
+            <p>
+                Diseñar una aplicación móvil que permita registrar, ubicar y gestionar incidencias urbanas
+                mediante geolocalización.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Solución</h3>
+            <p>
+                Desarrollo de una plataforma tecnológica que conecte ciudadanos con entidades responsables,
+                facilitando reportes en tiempo real.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Impacto</h3>
+            <p>
+                Mejora en la eficiencia de atención, fortalecimiento de la participación ciudadana
+                y optimización de la gestión pública.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- EVIDENCIAS -->
+<section id="evidencias">
+    <h2>📂 Evidencias del Proyecto</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>📄 Anteproyecto</h3>
+            <p>
+                Documento base que contiene el planteamiento del problema, objetivos,
+                justificación y estructura del proyecto.
+            </p>
+            <div class="buttons">
+                <a class="button" href="anteproyecto.docx" target="_blank">Ver</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>📊 Matriz de Consistencia</h3>
+            <p>
+                Relación entre variables, hipótesis y objetivos que garantizan coherencia metodológica.
+            </p>
+            <div class="buttons">
+                <a class="button" href="matriz.docx" target="_blank">Ver</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>📚 RAE</h3>
+            <p>
+                Análisis de investigaciones que sustentan teóricamente el proyecto.
+            </p>
+            <div class="buttons">
+                <a class="button" href="rae.odt" target="_blank">Ver</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>🎨 Presentación</h3>
+            <p>
+                Exposición visual del proyecto desarrollada en Canva.
+            </p>
+            <div class="buttons">
+                <a class="button" href="TU_LINK_CANVA" target="_blank">Ver</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONCLUSION -->
+<section id="conclusion">
+    <h2>📊 Conclusión</h2>
+    <p>
+        El desarrollo de este proyecto demuestra el potencial de las tecnologías móviles para transformar
+        la gestión urbana, permitiendo una mayor participación ciudadana y mejorando la eficiencia en la atención
+        de problemáticas del entorno.
+    </p>
+</section>
+
+<footer>
+    <p>Portafolio CTI - 2026</p>
+</footer>
+
+</body>
+</html>
