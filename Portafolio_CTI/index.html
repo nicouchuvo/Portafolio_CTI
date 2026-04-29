@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portafolio CTI</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+    scroll-behavior: smooth;
+}
+
+/* NAV */
+nav {
+    position: fixed;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    background: rgba(15,23,42,0.7);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: radial-gradient(circle at center, #3b82f6, #020617);
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+}
+
+.hero p {
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+.autores {
+    margin-top: 25px;
+    padding: 12px 20px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+}
+
+/* SECCIONES */
+section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 80px 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+/* TARJETAS */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: rgba(255,255,255,0.05);
+    border-radius: 15px;
+    padding: 20px;
+    backdrop-filter: blur(15px);
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.03);
+    background: rgba(255,255,255,0.1);
+}
+
+/* BOTONES */
+.button {
+    margin-top: 10px;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #3b82f6, #06b6d4);
+    color: white;
+    text-decoration: none;
+}
+
+/* PDF MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.9);
+    justify-content:center;
+    align-items:center;
+}
+
+.modal iframe {
+    width:80%;
+    height:80%;
+    border:none;
+}
+
+.close {
+    position:absolute;
+    top:20px;
+    right:30px;
+    font-size:30px;
+    cursor:pointer;
+}
+
+/* ANIMACIÓN */
+.fade {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.6s;
+}
+
+.fade.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="#intro">Inicio</a>
+    <a href="#proyecto">Proyecto</a>
+    <a href="#evidencias">Evidencias</a>
+</nav>
+
+<div class="hero">
+    <h1>🚀 Portafolio CTI</h1>
+    <p>Aplicación móvil para gestión de incidencias urbanas</p>
+
+    <div class="autores">
+        Nicolas David Uchuvo Cojo<br>
+        Neider Felipe Amaya Buitrago
+    </div>
+</div>
+
+<section id="intro">
+    <h2>📌 Introducción</h2>
+    <p class="fade">
+        Este proyecto propone el desarrollo de una aplicación móvil con geolocalización
+        que permita mejorar la gestión de incidencias urbanas mediante la participación ciudadana.
+    </p>
+</section>
+
+<section id="proyecto">
+    <h2>🚀 Proyecto</h2>
+
+    <div class="grid">
+
+        <div class="card fade">
+            <h3>⚠️ Problema</h3>
+            <p>Falta de herramientas digitales eficientes para reportar incidencias urbanas.</p>
+        </div>
+
+        <div class="card fade">
+            <h3>🎯 Objetivo</h3>
+            <p>Diseñar una aplicación móvil que permita registrar incidencias con geolocalización.</p>
+        </div>
+
+        <div class="card fade">
+            <h3>💡 Solución</h3>
+            <p>Plataforma digital que conecta ciudadanos con entidades públicas.</p>
+        </div>
+
+        <div class="card fade">
+            <h3>🌍 Impacto</h3>
+            <p>Mejora en la gestión urbana y participación ciudadana.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="evidencias">
+    <h2>📂 Evidencias</h2>
+
+    <div class="grid">
+
+        <div class="card fade">
+            <h3>📄 Anteproyecto</h3>
+            <button class="button" onclick="openPDF('Anteproyecto.pdf')">Ver</button>
+        </div>
+
+        <div class="card fade">
+            <h3>📊 Matriz</h3>
+            <button class="button" onclick="openPDF('Matriz.pdf')">Ver</button>
+        </div>
+
+        <div class="card fade">
+            <h3>📚 RAE</h3>
+            <button class="button" onclick="openPDF('RAE.pdf')">Ver</button>
+        </div>
+
+        <div class="card fade">
+            <h3>🎨 Presentación</h3>
+            <button class="button" onclick="openPDF('presentacion.pdf')">Ver</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- MODAL -->
+<div class="modal" id="modal">
+    <span class="close" onclick="closeModal()">✖</span>
+    <iframe id="viewer"></iframe>
+</div>
+
+<script>
+/* Animaciones */
+const faders = document.querySelectorAll('.fade');
+
+window.addEventListener('scroll', () => {
+    faders.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+        if(top < window.innerHeight - 50){
+            el.classList.add('visible');
+        }
+    });
+});
+
+/* PDF */
+function openPDF(file){
+    document.getElementById('modal').style.display='flex';
+    document.getElementById('viewer').src=file;
+}
+
+function closeModal(){
+    document.getElementById('modal').style.display='none';
+}
+</script>
+
+</body>
+</html>
