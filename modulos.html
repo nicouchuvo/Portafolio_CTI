@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Módulos | Portafolio CTI</title>
+
+<link rel="stylesheet" href="css/styles.css">
+
+<style>
+
+.page{
+    padding:120px 8%;
+    min-height:100vh;
+}
+
+/* HEADER */
+
+.header{
+    text-align:center;
+    margin-bottom:80px;
+}
+
+.header h1{
+
+    font-size:3.8rem;
+
+    margin-bottom:20px;
+
+    color:#2dd4bf;
+}
+
+.header p{
+
+    color:#99c4be;
+
+    font-size:1.1rem;
+}
+
+/* GRID */
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(260px,1fr));
+
+    gap:28px;
+}
+
+/* CARD */
+
+.card{
+
+    background:rgba(15,36,36,0.80);
+
+    padding:35px;
+
+    border-radius:24px;
+
+    text-decoration:none;
+
+    color:#cceae6;
+
+    transition:0.3s;
+
+    border:1px solid rgba(45,212,191,0.10);
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    background:rgba(26,60,60,0.92);
+
+    border:1px solid rgba(45,212,191,0.25);
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.20);
+}
+
+/* TITULOS */
+
+.card h2{
+
+    margin-bottom:18px;
+
+    color:#2dd4bf;
+
+    font-size:1.5rem;
+}
+
+/* TEXTO */
+
+.card p{
+
+    color:#99c4be;
+
+    line-height:1.7;
+}
+
+/* BOTON */
+
+.back{
+
+    text-align:center;
+
+    margin-top:70px;
+}
+
+.back a{
+
+    text-decoration:none;
+
+    background:#0d9488;
+
+    color:#ccfbf1;
+
+    padding:16px 34px;
+
+    border-radius:14px;
+
+    font-weight:bold;
+
+    transition:0.3s;
+}
+
+.back a:hover{
+
+    transform:translateY(-5px);
+
+    background:#0f766e;
+
+    box-shadow:0 0 20px rgba(45,212,191,0.18);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .header h1{
+        font-size:2.8rem;
+    }
+
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+    <h2>CTI</h2>
+
+    <div class="links">
+
+        <a href="index.html">
+            Inicio
+        </a>
+
+    </div>
+
+</nav>
+
+<!-- CONTENIDO -->
+
+<section class="page">
+
+    <div class="header">
+
+        <h1>
+            Módulos del Proyecto
+        </h1>
+
+        <p>
+            Navega por cada sección del portafolio académico.
+        </p>
+
+    </div>
+
+    <!-- MODULOS -->
+
+    <div class="cards">
+
+        <a href="proyecto.html" class="card">
+
+            <h2>
+                Proyecto
+            </h2>
+
+            <p>
+                Descripción general del proyecto
+                y propósito de la solución tecnológica.
+            </p>
+
+        </a>
+
+        <a href="problema.html" class="card">
+
+            <h2>
+                Problema
+            </h2>
+
+            <p>
+                Análisis del problema identificado
+                y contexto de la investigación.
+            </p>
+
+        </a>
+
+        <a href="investigacion.html" class="card">
+
+            <h2>
+                Investigación
+            </h2>
+
+            <p>
+                Pregunta principal y enfoque
+                investigativo del proyecto.
+            </p>
+
+        </a>
+
+        <a href="objetivos.html" class="card">
+
+            <h2>
+                Objetivos
+            </h2>
+
+            <p>
+                Objetivo general y objetivos
+                específicos del proyecto.
+            </p>
+
+        </a>
+
+        <a href="variables.html" class="card">
+
+            <h2>
+                Variables
+            </h2>
+
+            <p>
+                Operacionalización y análisis
+                de variables de investigación.
+            </p>
+
+        </a>
+
+        <a href="anteproyecto.html" class="card">
+
+            <h2>
+                Anteproyecto
+            </h2>
+
+            <p>
+                Documento principal del proyecto
+                en formato PDF.
+            </p>
+
+        </a>
+
+        <a href="matriz.html" class="card">
+
+            <h2>
+                Matriz
+            </h2>
+
+            <p>
+                Matriz de consistencia
+                y estructura investigativa.
+            </p>
+
+        </a>
+
+        <a href="marco.html" class="card">
+
+            <h2>
+                Marco lógico
+            </h2>
+
+            <p>
+                Metodología, estructura
+                y desarrollo del proyecto.
+            </p>
+
+        </a>
+
+        <a href="evidencias.html" class="card">
+
+            <h2>
+                Evidencias
+            </h2>
+
+            <p>
+                Archivos, diagramas
+                y soportes académicos.
+            </p>
+
+        </a>
+
+    </div>
+
+    <!-- BOTON -->
+
+    <div class="back">
+
+        <a href="index.html">
+
+            Volver
+
+        </a>
+
+    </div>
+
+</section>
+
+</body>
+</html>

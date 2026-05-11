@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Evidencias | Portafolio CTI</title>
+<link rel="stylesheet" href="css/styles.css">
+<style>
+.page{padding:120px 8%;min-height:100vh;}
+.header{text-align:center;margin-bottom:80px;}
+.header h1{font-size:3.8rem;margin-bottom:20px;color:#2dd4bf;}
+.header p{color:#99c4be;font-size:1.1rem;max-width:700px;margin:auto;line-height:1.7;}
+.evidencia-card{background:rgba(15,36,36,0.80);border:1px solid rgba(45,212,191,0.15);border-radius:24px;padding:60px 40px;text-align:center;max-width:750px;margin:0 auto 40px;transition:0.3s;}
+.evidencia-card:hover{border:1px solid rgba(45,212,191,0.30);box-shadow:0 10px 30px rgba(0,0,0,0.25);}
+.evidencia-card .icono{font-size:4rem;margin-bottom:25px;}
+.evidencia-card h2{color:#2dd4bf;font-size:1.8rem;margin-bottom:16px;}
+.evidencia-card p{color:#99c4be;font-size:1rem;line-height:1.8;margin-bottom:40px;}
+.btn-repo{display:inline-block;background:#0d9488;color:#ccfbf1;text-decoration:none;padding:18px 45px;border-radius:16px;font-weight:bold;font-size:1rem;transition:0.3s;}
+.btn-repo:hover{transform:translateY(-8px);background:#0f766e;box-shadow:0 0 20px rgba(45,212,191,0.18);}
+.info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:750px;margin:50px auto 0;}
+.info-card{background:rgba(15,36,36,0.80);border:1px solid rgba(45,212,191,0.10);border-radius:18px;padding:30px 20px;text-align:center;transition:0.3s;}
+.info-card:hover{border:1px solid rgba(45,212,191,0.25);background:rgba(26,60,60,0.92);}
+.info-card .num{font-size:2.2rem;font-weight:700;color:#2dd4bf;margin-bottom:8px;}
+.info-card p{color:#99c4be;font-size:0.9rem;margin:0;}
+.back{text-align:center;margin-top:70px;}
+.back a{text-decoration:none;background:#0d9488;color:#ccfbf1;padding:16px 34px;border-radius:14px;font-weight:bold;transition:0.3s;}
+.back a:hover{transform:translateY(-5px);background:#0f766e;box-shadow:0 0 20px rgba(45,212,191,0.18);}
+@media(max-width:768px){.header h1{font-size:2.8rem;}.evidencia-card{padding:40px 24px;}.info-grid{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+    <h2>CTI</h2>
+    <div class="links">
+        <a href="index.html">Inicio</a>
+        <a href="modulos.html">Módulos</a>
+    </div>
+</nav>
+
+<section class="page">
+
+    <div class="header">
+        <h1>Evidencias</h1>
+        <p>Repositorio de documentos, diagramas y archivos que respaldan el desarrollo metodológico del proyecto de gestión de incidencias urbanas.</p>
+    </div>
+
+    <div class="evidencia-card">
+        <div class="icono">🗂️</div>
+        <h2>Repositorio del proyecto</h2>
+        <p>Accede al repositorio completo con todos los archivos del proyecto: árboles de problemas y objetivos, análisis de actores, estructura analítica, marcos lógicos y demás documentos de soporte académico.</p>
+        <a href="https://mailunicundiedu-my.sharepoint.com/:f:/g/personal/josealejandromartinez_ucundinamarca_edu_co/IgB6Iqo8-fZiRoStNQCAQvK9AS02NI54T5wCGKI31sUZWRQ?e=H7h2dh" target="_blank" class="btn-repo">Ver repositorio completo</a>
+    </div>
+
+    <div class="info-grid">
+        <div class="info-card">
+            <div class="num">5</div>
+            <p>Diagramas del proyecto</p>
+        </div>
+        <div class="info-card">
+            <div class="num">4</div>
+            <p>Componentes documentados</p>
+        </div>
+        <div class="info-card">
+            <div class="num">16</div>
+            <p>Actividades registradas</p>
+        </div>
+    </div>
+
+    <div class="back">
+        <a href="modulos.html">Volver a módulos</a>
+    </div>
+
+</section>
+
+</body>
+</html>

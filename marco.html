@@ -1,0 +1,1353 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Marco lógico | Portafolio CTI</title>
+
+<link rel="stylesheet" href="css/styles.css">
+
+<style>
+
+body{
+    background:
+    radial-gradient(circle at top,
+    rgba(45,212,191,0.15),
+    transparent 40%),
+    #061414;
+
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    margin:0;
+}
+
+/* ========================= */
+/* CONTENEDOR */
+/* ========================= */
+
+.page{
+    padding:120px 5%;
+}
+
+/* ========================= */
+/* TITULO PRINCIPAL */
+/* ========================= */
+
+.main-title{
+    text-align:center;
+    margin-bottom:80px;
+}
+
+.main-title h1{
+    font-size:3.5rem;
+    color:#5eead4;
+    margin-bottom:20px;
+}
+
+.main-title p{
+    color:#cbd5e1;
+    font-size:1.1rem;
+    line-height:1.7;
+    max-width:900px;
+    margin:auto;
+}
+
+/* ========================= */
+/* NAVBAR */
+/* ========================= */
+
+.navbar{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#041010;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 5%;
+    z-index:1000;
+    border-bottom:1px solid rgba(45,212,191,0.2);
+    box-sizing:border-box;
+}
+
+.navbar h2{
+    color:#5eead4;
+}
+
+.links a{
+    color:#d1d5db;
+    text-decoration:none;
+    margin-left:20px;
+    transition:0.3s;
+}
+
+.links a:hover{
+    color:#5eead4;
+}
+
+/* ========================= */
+/* TABLAS */
+/* ========================= */
+
+.tabla-section{
+
+    width:100%;
+    max-width:1600px;
+
+    margin:70px auto;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.titulo-tabla{
+
+    color:#5eead4;
+
+    font-size:2rem;
+
+    margin-bottom:25px;
+
+    text-align:center;
+
+    width:100%;
+}
+
+/* CONTENEDOR TABLA */
+
+.tabla-container{
+
+    width:100%;
+
+    overflow-x:auto;
+
+    background:rgba(0,0,0,0.35);
+
+    border-radius:25px;
+
+    border:1px solid rgba(45,212,191,0.25);
+
+    box-shadow:0 0 20px rgba(45,212,191,0.15);
+}
+
+/* TABLA */
+
+.tabla-cti{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    min-width:900px;
+}
+
+/* HEADER */
+
+.tabla-cti thead{
+
+    background:#159a92;
+}
+
+/* TITULOS COLUMNAS */
+
+.tabla-cti th{
+
+    color:white;
+
+    padding:22px;
+
+    text-transform:uppercase;
+
+    font-size:0.95rem;
+
+    text-align:center;
+}
+
+/* CONTENIDO */
+
+.tabla-cti td{
+
+    padding:22px;
+
+    color:#d1d5db;
+
+    text-align:center;
+
+    border-bottom:1px solid rgba(255,255,255,0.05);
+}
+
+/* HOVER */
+
+.tabla-cti tbody tr{
+
+    transition:0.3s;
+}
+
+.tabla-cti tbody tr:hover{
+
+    background:rgba(45,212,191,0.08);
+}
+
+/* ========================= */
+/* TARJETAS DESCRIPTIVAS     */
+/* ========================= */
+
+.desc-card {
+    width: 100%;
+    background: rgba(0,0,0,0.35);
+    border: 1px solid rgba(45,212,191,0.25);
+    border-radius: 20px;
+    padding: 28px 32px;
+    box-shadow: 0 0 20px rgba(45,212,191,0.08);
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+
+.desc-card h3 {
+    color: #5eead4;
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    margin-top: 10px;
+}
+
+.desc-card p {
+    color: #94a3b8;
+    font-size: 0.97rem;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.section-badge {
+    display: inline-block;
+    background: rgba(45,212,191,0.12);
+    border: 1px solid rgba(45,212,191,0.3);
+    color: #5eead4;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px 14px;
+    border-radius: 20px;
+    margin-bottom: 4px;
+    letter-spacing: 0.4px;
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media(max-width:768px){
+
+    .page{
+        padding:120px 20px;
+    }
+
+    .main-title h1{
+        font-size:2.5rem;
+    }
+
+    .titulo-tabla{
+        font-size:1.5rem;
+    }
+
+    .tabla-cti{
+        min-width:700px;
+    }
+
+    .desc-card {
+        padding: 22px 20px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+    <h2>CTI</h2>
+
+    <div class="links">
+        <a href="index.html">Inicio</a>
+        <a href="modulos.html">Módulos</a>
+    </div>
+
+</nav>
+
+<!-- CONTENIDO -->
+
+<section class="page">
+
+    <div class="main-title">
+
+        <h1>Marco lógico</h1>
+
+        <p>
+            Desarrollo metodológico del proyecto
+            de aplicación móvil con geolocalización
+            para la gestión de incidencias urbanas.
+        </p>
+
+    </div>
+
+    <!-- ========================= -->
+    <!-- ANALISIS INVOLUCRADOS -->
+    <!-- ========================= -->
+
+    <section class="tabla-section">
+
+        <h2 class="titulo-tabla">
+            Análisis de involucrados
+        </h2>
+
+        <!-- DESCRIPCIÓN -->
+        <div class="desc-card">
+            <span class="section-badge">1.1 Análisis de involucrados</span>
+            <h3>¿Quiénes participan en el proyecto?</h3>
+            <p>
+                El análisis de involucrados identifica a todos los actores que tienen una relación
+                directa o indirecta con el proyecto. Se evalúa su nivel de interés frente a las
+                problemáticas urbanas y el impacto que el sistema podría generar sobre ellos,
+                permitiendo priorizar decisiones de diseño e implementación.
+            </p>
+        </div>
+
+        <div class="tabla-container">
+
+            <table class="tabla-cti">
+
+                <thead>
+
+                    <tr>
+                        <th>Involucrado</th>
+                        <th>Interés</th>
+                        <th>Impacto</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Ciudadanos</td>
+                        <td>Reportar incidencias</td>
+                        <td>Alto</td>
+                    </tr>
+
+                    <tr>
+                        <td>Alcaldía</td>
+                        <td>Gestionar reportes</td>
+                        <td>Alto</td>
+                    </tr>
+
+                    <tr>
+                        <td>Empresas públicas</td>
+                        <td>Solucionar problemas</td>
+                        <td>Medio</td>
+                    </tr>
+
+                    <tr>
+                        <td>Comunidad</td>
+                        <td>Mejorar entorno urbano</td>
+                        <td>Alto</td>
+                    </tr>
+
+                    <tr>
+                        <td>Administradores</td>
+                        <td>Supervisar sistema</td>
+                        <td>Medio</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- EFR -->
+    <!-- ========================= -->
+
+    <section class="tabla-section">
+
+        <h2 class="titulo-tabla">
+            E.F.R de los involucrados
+        </h2>
+
+        <!-- DESCRIPCIÓN -->
+        <div class="desc-card">
+            <span class="section-badge">1.2 E.F.R. de los involucrados</span>
+            <h3>Expectativas, Fortalezas y Riesgos</h3>
+            <p>
+                Esta matriz profundiza el análisis de cada actor, describiendo qué esperan del proyecto
+                (expectativas), con qué recursos o capacidades cuentan para apoyar su desarrollo
+                (fortalezas) y qué factores pueden dificultar su participación o comprometer los
+                resultados esperados (riesgos). Es la base para definir estrategias de gestión del
+                cambio y mitigación de amenazas durante la ejecución.
+            </p>
+        </div>
+
+        <div class="tabla-container">
+
+            <table class="tabla-cti">
+
+                <thead>
+
+                    <tr>
+                        <th>Involucrado</th>
+                        <th>Expectativas</th>
+                        <th>Fortalezas</th>
+                        <th>Riesgos</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Ciudadanos</td>
+                        <td>Mejorar tiempos de atención</td>
+                        <td>Participación ciudadana</td>
+                        <td>Poco uso de la aplicación</td>
+                    </tr>
+
+                    <tr>
+                        <td>Alcaldía</td>
+                        <td>Optimizar gestión urbana</td>
+                        <td>Acceso a información centralizada</td>
+                        <td>Sobrecarga administrativa</td>
+                    </tr>
+
+                    <tr>
+                        <td>Empresas públicas</td>
+                        <td>Resolver incidencias rápidamente</td>
+                        <td>Personal técnico capacitado</td>
+                        <td>Demoras operativas</td>
+                    </tr>
+
+                    <tr>
+                        <td>Comunidad</td>
+                        <td>Mejorar entorno urbano</td>
+                        <td>Comunicación con entidades</td>
+                        <td>Baja interacción</td>
+                    </tr>
+
+                    <tr>
+                        <td>Administradores</td>
+                        <td>Supervisar el sistema</td>
+                        <td>Control y monitoreo</td>
+                        <td>Fallos técnicos</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- ANALISIS ACCION -->
+    <!-- ========================= -->
+
+    <section class="tabla-section">
+
+        <h2 class="titulo-tabla">
+            Análisis acción - medio - causa - problema
+        </h2>
+
+        <!-- DESCRIPCIÓN -->
+        <div class="desc-card">
+            <span class="section-badge">1.3 Análisis acción – medio – causa – problema</span>
+            <h3>Relación entre acciones y el problema central</h3>
+            <p>
+                Este análisis articula la lógica de intervención del proyecto: describe cada acción
+                propuesta, el medio tecnológico o metodológico que la soporta, la causa que busca
+                atender y el problema raíz al que responde. Permite verificar la coherencia entre
+                lo que se hace y el cambio que se espera generar en la gestión de incidencias urbanas.
+            </p>
+        </div>
+
+        <div class="tabla-container">
+
+            <table class="tabla-cti">
+
+                <thead>
+
+                    <tr>
+                        <th>Acción</th>
+                        <th>Medio</th>
+                        <th>Causa</th>
+                        <th>Problema</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Desarrollo de aplicación móvil</td>
+                        <td>Geolocalización</td>
+                        <td>Falta de herramientas tecnológicas</td>
+                        <td>Deficiente gestión de incidencias</td>
+                    </tr>
+
+                    <tr>
+                        <td>Implementación de reportes digitales</td>
+                        <td>Plataforma centralizada</td>
+                        <td>Canales tradicionales ineficientes</td>
+                        <td>Demora en atención</td>
+                    </tr>
+
+                    <tr>
+                        <td>Integración ciudadano-entidad</td>
+                        <td>Sistema web y móvil</td>
+                        <td>Baja comunicación institucional</td>
+                        <td>Baja participación ciudadana</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    <!-- ========================= -->
+    <!-- CARDS DEL MARCO LÓGICO -->
+    <!-- ========================= -->
+
+    <section class="section">
+
+        <h2 style="margin-top:90px; margin-bottom:45px;">
+        Diagramas y estructura del proyecto
+        </h2>
+
+        <div class="cards">
+
+            <!-- ARBOL PROBLEMAS -->
+
+            <div class="card">
+
+                <img src="img/Arbol de problemas.png" alt="Árbol de problemas">
+
+                <div class="card-content">
+
+                    <h3>Árbol de problemas</h3>
+
+                    <p>
+                        Problema central, causas y efectos identificados.
+                    </p>
+
+                    <div class="buttons">
+
+                        <a 
+                        href="img/Arbol de problemas.png"
+                        target="_blank"
+                        class="btn">
+                        Ver imagen
+                        </a>
+
+                        <a 
+                        href="https://mailunicundiedu-my.sharepoint.com/:f:/g/personal/josealejandromartinez_ucundinamarca_edu_co/IgB6Iqo8-fZiRoStNQCAQvK9AS02NI54T5wCGKI31sUZWRQ?e=H7h2dh"
+                        target="_blank"
+                        class="btn">
+                        Ver en repositorio
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ARBOL OBJETIVOS -->
+
+            <div class="card">
+
+                <img src="img/Arbol de objetivos.png" alt="Árbol de objetivos">
+
+                <div class="card-content">
+
+                    <h3>Árbol de objetivos</h3>
+
+                    <p>
+                        Transformación del problema en medios y fines.
+                    </p>
+
+                    <div class="buttons">
+
+                        <a 
+                        href="img/Arbol de objetivos.png"
+                        target="_blank"
+                        class="btn">
+                        Ver imagen
+                        </a>
+
+                        <a 
+                        href="https://mailunicundiedu-my.sharepoint.com/:f:/g/personal/josealejandromartinez_ucundinamarca_edu_co/IgB6Iqo8-fZiRoStNQCAQvK9AS02NI54T5wCGKI31sUZWRQ?e=H7h2dh"
+                        target="_blank"
+                        class="btn">
+                        Ver en repositorio
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ANALISIS ACCION -->
+
+            <div class="card">
+
+                <img src="img/Analisis accion.png" alt="Selección de estrategia">
+
+                <div class="card-content">
+
+                    <h3>Selección de estrategia</h3>
+
+                    <p>
+                        Relación entre acciones, medios y causas.
+                    </p>
+
+                    <div class="buttons">
+
+                        <a 
+                        href="img/Analisis accion.png"
+                        target="_blank"
+                        class="btn">
+                        Ver imagen
+                        </a>
+
+                        <a 
+                        href="https://mailunicundiedu-my.sharepoint.com/:f:/g/personal/josealejandromartinez_ucundinamarca_edu_co/IgB6Iqo8-fZiRoStNQCAQvK9AS02NI54T5wCGKI31sUZWRQ?e=H7h2dh"
+                        target="_blank"
+                        class="btn">
+                        Ver en repositorio
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- EAP -->
+
+            <div class="card">
+
+                <img src="img/Organigrama.png" alt="EAP">
+
+                <div class="card-content">
+
+                    <h3>Estructura Analítica</h3>
+
+                    <p>
+                        Organización jerárquica del proyecto y componentes.
+                    </p>
+
+                    <div class="buttons">
+
+                        <a 
+                        href="img/Organigrama.png"
+                        target="_blank"
+                        class="btn">
+                        Ver imagen
+                        </a>
+
+                        <a 
+                        href="https://mailunicundiedu-my.sharepoint.com/:f:/g/personal/josealejandromartinez_ucundinamarca_edu_co/IgB6Iqo8-fZiRoStNQCAQvK9AS02NI54T5wCGKI31sUZWRQ?e=H7h2dh"
+                        target="_blank"
+                        class="btn">
+                        Ver en repositorio
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- MAPA ACTORES -->
+
+            <div class="card">
+
+                <img src="img/Mapa de actores.png" alt="Mapa de actores">
+
+                <div class="card-content">
+
+                    <h3>Mapa de actores</h3>
+
+                    <p>
+                        Relación entre ciudadanos, entidades y administradores.
+                    </p>
+
+                    <div class="buttons">
+
+                        <a 
+                        href="img/Mapa de actores.png"
+                        target="_blank"
+                        class="btn">
+                        Ver imagen
+                        </a>
+
+                        <a 
+                        href="https://mailunicundiedu-my.sharepoint.com/:f:/g/personal/josealejandromartinez_ucundinamarca_edu_co/IgB6Iqo8-fZiRoStNQCAQvK9AS02NI54T5wCGKI31sUZWRQ?e=H7h2dh"
+                        target="_blank"
+                        class="btn">
+                        Ver en repositorio
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    </section>
+
+    <!-- ================================================= -->
+    <!-- RESUMEN NARRATIVO -->
+    <!-- ================================================= -->
+
+    <section class="tabla-section">
+
+        <h2 class="titulo-tabla"
+        style="margin-top:100px; margin-bottom:45px;">
+
+            Resumen narrativo
+
+        </h2>
+
+        <!-- DESCRIPCIÓN -->
+        <div class="desc-card">
+            <span class="section-badge">1.4 Resumen narrativo</span>
+            <h3>Columna de objetivos de la Matriz de Marco Lógico</h3>
+            <p>
+                El resumen narrativo corresponde a la columna de objetivos de la Matriz de Marco Lógico.
+                Su propósito es sintetizar, de manera clara y jerárquica, el fin, propósito, componentes
+                y actividades del proyecto. Esta estructura permite verificar la relación causal entre
+                las actividades metodológicas, los productos esperados y los resultados que se buscan
+                alcanzar con el anteproyecto.
+            </p>
+        </div>
+
+        <div class="tabla-container">
+
+            <table class="tabla-cti">
+
+                <thead>
+
+                    <tr>
+                        <th>Nivel</th>
+                        <th>Código</th>
+                        <th>Resumen narrativo</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <!-- FIN -->
+
+                    <tr>
+                        <td>Fin</td>
+                        <td>F.1</td>
+                        <td>
+                            Contribuir al mejoramiento de la gestión urbana y comunitaria mediante herramientas tecnológicas de reporte ciudadano.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Fin</td>
+                        <td>F.2</td>
+                        <td>
+                            Fortalecer la comunicación entre ciudadanos y entidades responsables de servicios públicos y seguridad.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Fin</td>
+                        <td>F.3</td>
+                        <td>
+                            Incrementar la participación ciudadana en el reporte de incidencias urbanas.
+                        </td>
+                    </tr>
+
+                    <!-- PROPOSITO -->
+
+                    <tr>
+                        <td>Propósito</td>
+                        <td>P.1</td>
+                        <td>
+                            Implementar una plataforma web y móvil para el reporte y seguimiento de incidencias urbanas mediante geolocalización y conexión directa con entidades responsables.
+                        </td>
+                    </tr>
+
+                    <!-- COMPONENTES -->
+
+                    <tr>
+                        <td>Componente</td>
+                        <td>C.1</td>
+                        <td>
+                            Sistema digital de reportes ciudadanos implementado.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Componente</td>
+                        <td>C.2</td>
+                        <td>
+                            Módulo de geolocalización y ubicación en tiempo real integrado.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Componente</td>
+                        <td>C.3</td>
+                        <td>
+                            Plataforma de seguimiento y notificaciones desarrollada.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Componente</td>
+                        <td>C.4</td>
+                        <td>
+                            Integración con entidades públicas y servicios de emergencia realizada.
+                        </td>
+                    </tr>
+
+                    <!-- ACTIVIDADES C1 -->
+
+                    <tr>
+                        <td>Actividad C.1</td>
+                        <td>A.1.1</td>
+                        <td>
+                            Diseñar formularios digitales para incidencias urbanas.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Actividad C.1</td>
+                        <td>A.1.2</td>
+                        <td>
+                            Crear el sistema de registro de usuarios.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Actividad C.1</td>
+                        <td>A.1.3</td>
+                        <td>
+                            Implementar el módulo de reportes ciudadanos.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Actividad C.1</td>
+                        <td>A.1.4</td>
+                        <td>
+                            Validar el funcionamiento del sistema de incidencias.
+                        </td>
+                    </tr>
+
+                    <!-- ACTIVIDADES C2 -->
+
+                    <tr>
+                        <td>Actividad C.2</td>
+                        <td>A.2.1</td>
+                        <td>
+                            Integrar mapas interactivos en la aplicación.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Actividad C.2</td>
+                        <td>A.2.2</td>
+                        <td>
+                            Permitir el envío de ubicación en tiempo real.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Actividad C.2</td>
+                        <td>A.2.3</td>
+                        <td>
+                            Mostrar incidencias geolocalizadas en el mapa.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Actividad C.2</td>
+                        <td>A.2.4</td>
+                        <td>
+                            Validar coordenadas y precisión GPS.
+                        </td>
+                    </tr>
+
+                    <!-- ACTIVIDADES C3 -->
+
+                    <tr>
+                        <td>Actividad C.3</td>
+                        <td>A.3.1</td>
+                        <td>
+                            Diseñar el sistema de seguimiento de incidencias.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Actividad C.3</td>
+                        <td>A.3.2</td>
+                        <td>
+                            Implementar estados de atención de reportes.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Actividad C.3</td>
+                        <td>A.3.3</td>
+                        <td>
+                            Crear notificaciones para ciudadanos.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Actividad C.3</td>
+                        <td>A.3.4</td>
+                        <td>
+                            Optimizar la comunicación entre usuarios y entidades.
+                        </td>
+                    </tr>
+
+                    <!-- ACTIVIDADES C4 -->
+
+                    <tr>
+                        <td>Actividad C.4</td>
+                        <td>A.4.1</td>
+                        <td>
+                            Integrar empresas de servicios públicos al sistema.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Actividad C.4</td>
+                        <td>A.4.2</td>
+                        <td>
+                            Configurar comunicación con autoridades y emergencias.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Actividad C.4</td>
+                        <td>A.4.3</td>
+                        <td>
+                            Implementar panel administrativo y operadores.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Actividad C.4</td>
+                        <td>A.4.4</td>
+                        <td>
+                            Realizar pruebas generales de funcionamiento.
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+<!-- ================================================= -->
+<!-- COMPONENTES -->
+<!-- ================================================= -->
+
+<section class="tabla-section">
+
+    <h2 class="titulo-tabla">
+        Componentes del proyecto
+    </h2>
+
+    <div class="desc-card">
+
+        <span class="section-badge">
+            1.7 Componentes
+        </span>
+
+        <h3>
+            Productos y resultados esperados
+        </h3>
+
+        <p>
+            Los componentes representan los productos principales necesarios
+            para cumplir el propósito del proyecto y garantizar el correcto
+            funcionamiento del sistema de incidencias urbanas.
+        </p>
+
+    </div>
+
+    <div class="tabla-container">
+
+        <table class="tabla-cti">
+
+            <thead>
+
+                <tr>
+                    <th>Componente</th>
+                    <th>Objetivo específico</th>
+                    <th>Indicador</th>
+                    <th>Medios de verificación</th>
+                    <th>Supuestos</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>
+                        Identificación de necesidades ciudadanas
+                    </td>
+
+                    <td>
+                        Identificar las principales necesidades de los ciudadanos.
+                    </td>
+
+                    <td>
+                        Número de necesidades identificadas.
+                    </td>
+
+                    <td>
+                        Encuestas y análisis realizados.
+                    </td>
+
+                    <td>
+                        Participación de la comunidad.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Diseño de la aplicación móvil
+                    </td>
+
+                    <td>
+                        Diseñar la estructura funcional de la aplicación.
+                    </td>
+
+                    <td>
+                        Prototipo funcional desarrollado.
+                    </td>
+
+                    <td>
+                        Mockups y documentación técnica.
+                    </td>
+
+                    <td>
+                        Recursos tecnológicos disponibles.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Sistema de gestión de reportes
+                    </td>
+
+                    <td>
+                        Desarrollar sistema de almacenamiento y gestión.
+                    </td>
+
+                    <td>
+                        Reportes registrados correctamente.
+                    </td>
+
+                    <td>
+                        Base de datos y pruebas funcionales.
+                    </td>
+
+                    <td>
+                        Correcto funcionamiento del sistema.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Evaluación del impacto del sistema
+                    </td>
+
+                    <td>
+                        Evaluar el impacto tecnológico y ciudadano.
+                    </td>
+
+                    <td>
+                        Nivel de satisfacción ciudadana.
+                    </td>
+
+                    <td>
+                        Encuestas y resultados finales.
+                    </td>
+
+                    <td>
+                        Uso constante de la plataforma.
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+<!-- ================================================= -->
+<!-- ACTIVIDADES -->
+<!-- ================================================= -->
+
+<section class="tabla-section">
+
+    <h2 class="titulo-tabla">
+        Actividades del proyecto
+    </h2>
+
+    <div class="desc-card">
+
+        <span class="section-badge">
+            1.8 Actividades
+        </span>
+
+        <h3>
+            Planeación de ejecución del proyecto
+        </h3>
+
+        <p>
+            Las actividades representan las acciones metodológicas y técnicas
+            necesarias para desarrollar cada uno de los componentes definidos
+            en la estructura analítica del proyecto.
+        </p>
+
+    </div>
+
+    <div class="tabla-container">
+
+        <table class="tabla-cti">
+
+            <thead>
+
+                <tr>
+                    <th>Actividad</th>
+                    <th>Componente</th>
+                    <th>Responsable</th>
+                    <th>Fecha estimada</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>
+                        Identificar necesidades ciudadanas.
+                    </td>
+
+                    <td>
+                        Identificación de necesidades ciudadanas
+                    </td>
+
+                    <td>
+                        Equipo de investigación
+                    </td>
+
+                    <td>
+                        Mes 1
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Diseñar estructura funcional de la aplicación.
+                    </td>
+
+                    <td>
+                        Diseño de la aplicación móvil
+                    </td>
+
+                    <td>
+                        Equipo de desarrollo
+                    </td>
+
+                    <td>
+                        Mes 2
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Implementar formularios digitales y reportes.
+                    </td>
+
+                    <td>
+                        Sistema de gestión de reportes
+                    </td>
+
+                    <td>
+                        Equipo técnico
+                    </td>
+
+                    <td>
+                        Mes 3
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Integrar geolocalización y mapas interactivos.
+                    </td>
+
+                    <td>
+                        Sistema de gestión de reportes
+                    </td>
+
+                    <td>
+                        Equipo backend
+                    </td>
+
+                    <td>
+                        Mes 4
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Realizar pruebas y evaluación del sistema.
+                    </td>
+
+                    <td>
+                        Evaluación del impacto del sistema
+                    </td>
+
+                    <td>
+                        Equipo de pruebas
+                    </td>
+
+                    <td>
+                        Mes 5
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+<!-- ================================================= -->
+<!-- PRESUPUESTO -->
+<!-- ================================================= -->
+
+<section class="tabla-section">
+
+    <h2 class="titulo-tabla">
+        Presupuesto del proyecto
+    </h2>
+
+    <div class="desc-card">
+
+        <span class="section-badge">
+            1.9 Presupuesto
+        </span>
+
+        <h3>
+            Recursos financieros estimados
+        </h3>
+
+        <p>
+            El presupuesto contempla los recursos tecnológicos y operativos
+            necesarios para el diseño, implementación y validación del sistema
+            de incidencias urbanas.
+        </p>
+
+    </div>
+
+    <div class="tabla-container">
+
+        <table class="tabla-cti">
+
+            <thead>
+
+                <tr>
+                    <th>Ítem</th>
+                    <th>Costo</th>
+                    <th>Fuente de financiamiento</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>Diseño de aplicación móvil</td>
+                    <td>$1.500.000</td>
+                    <td>Recursos propios</td>
+                </tr>
+
+                <tr>
+                    <td>Desarrollo sistema web y móvil</td>
+                    <td>$3.000.000</td>
+                    <td>Recursos propios</td>
+                </tr>
+
+                <tr>
+                    <td>Integración de geolocalización</td>
+                    <td>$800.000</td>
+                    <td>Recursos propios</td>
+                </tr>
+
+                <tr>
+                    <td>Base de datos y almacenamiento</td>
+                    <td>$700.000</td>
+                    <td>Recursos propios</td>
+                </tr>
+
+                <tr>
+                    <td>Pruebas y validación</td>
+                    <td>$500.000</td>
+                    <td>Recursos propios</td>
+                </tr>
+
+                <tr>
+                    <td>Total</td>
+                    <td>$6.500.000</td>
+                    <td>Recursos propios</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+</section>
+
+</body>
+</html>

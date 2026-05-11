@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Variables | Portafolio CTI</title>
+
+<link rel="stylesheet" href="css/styles.css">
+
+<style>
+
+.page{
+    min-height:100vh;
+    padding:120px 8%;
+}
+
+/* HEADER */
+
+.header{
+    text-align:center;
+    margin-bottom:80px;
+}
+
+.header h1{
+
+    font-size:3.5rem;
+
+    margin-bottom:20px;
+
+    color:#2dd4bf;
+}
+
+.header p{
+
+    color:#99c4be;
+
+    font-size:1.1rem;
+}
+
+/* VARIABLES GRID */
+
+.variables-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(350px,1fr));
+
+    gap:30px;
+
+    margin-bottom:80px;
+}
+
+/* CARDS */
+
+.variable-card{
+
+    background:rgba(15,36,36,0.80);
+
+    padding:40px;
+
+    border-radius:25px;
+
+    border-top:5px solid #0d9488;
+
+    border:1px solid rgba(45,212,191,0.10);
+
+    transition:0.3s;
+}
+
+.variable-card:hover{
+
+    transform:translateY(-10px);
+
+    background:rgba(26,60,60,0.92);
+
+    border:1px solid rgba(45,212,191,0.25);
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.20);
+}
+
+.variable-card h2{
+
+    margin-bottom:20px;
+
+    color:#2dd4bf;
+
+    font-size:1.8rem;
+}
+
+.variable-card p{
+
+    line-height:1.9;
+
+    color:#99c4be;
+}
+
+/* TITULO TABLA */
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:50px;
+}
+
+.section-title h2{
+
+    font-size:2.5rem;
+
+    color:#2dd4bf;
+}
+
+/* TABLA */
+
+.table-container{
+
+    overflow-x:auto;
+}
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:rgba(15,36,36,0.80);
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(45,212,191,0.10);
+}
+
+/* HEADERS TABLA */
+
+th{
+
+    background:#0d9488;
+
+    color:#ccfbf1;
+
+    padding:20px;
+
+    text-align:left;
+
+    font-size:1rem;
+}
+
+/* CELDAS */
+
+td{
+
+    padding:20px;
+
+    border-bottom:1px solid rgba(45,212,191,0.06);
+
+    color:#99c4be;
+
+    line-height:1.7;
+}
+
+/* HOVER FILAS */
+
+tr:hover{
+
+    background:rgba(26,60,60,0.60);
+}
+
+/* BOTON */
+
+.back{
+
+    text-align:center;
+
+    margin-top:80px;
+}
+
+.back a{
+
+    text-decoration:none;
+
+    background:#0d9488;
+
+    color:#ccfbf1;
+
+    padding:16px 34px;
+
+    border-radius:14px;
+
+    font-weight:bold;
+
+    transition:0.3s;
+}
+
+.back a:hover{
+
+    transform:translateY(-5px);
+
+    background:#0f766e;
+
+    box-shadow:0 0 20px rgba(45,212,191,0.18);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .header h1{
+        font-size:2.8rem;
+    }
+
+    .variable-card{
+        padding:30px;
+    }
+
+    th,
+    td{
+        padding:15px;
+    }
+
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+    <h2>CTI</h2>
+
+    <div class="links">
+
+        <a href="index.html">
+            Inicio
+        </a>
+
+        <a href="problema.html">
+            Problema
+        </a>
+
+        <a href="investigacion.html">
+            Investigación
+        </a>
+
+        <a href="objetivos.html">
+            Objetivos
+        </a>
+
+        <a href="variables.html">
+            Variables
+        </a>
+
+        <a href="marco.html">
+            Marco lógico
+        </a>
+
+    </div>
+
+</nav>
+
+<!-- CONTENIDO -->
+
+<section class="page">
+
+    <!-- HEADER -->
+
+    <div class="header">
+
+        <h1>
+            Variables del Proyecto
+        </h1>
+
+        <p>
+            Relación entre las variables principales
+            del proceso de investigación.
+        </p>
+
+    </div>
+
+    <!-- VARIABLES -->
+
+    <div class="variables-grid">
+
+        <div class="variable-card">
+
+            <h2>
+                Variable Independiente
+            </h2>
+
+            <p>
+                Aplicación móvil con geolocalización.
+            </p>
+
+            <br>
+
+            <p>
+                Corresponde a la herramienta tecnológica
+                diseñada para registrar, visualizar
+                y gestionar incidencias urbanas
+                mediante el uso de georreferenciación.
+            </p>
+
+        </div>
+
+        <div class="variable-card">
+
+            <h2>
+                Variable Dependiente
+            </h2>
+
+            <p>
+                Optimización del proceso de reporte
+                y gestión de incidencias urbanas.
+            </p>
+
+            <br>
+
+            <p>
+                Hace referencia a la mejora en eficiencia,
+                organización, seguimiento y participación
+                ciudadana dentro del sistema propuesto.
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- TABLA -->
+
+    <div class="section-title">
+
+        <h2>
+            Dimensiones e Indicadores
+        </h2>
+
+    </div>
+
+    <div class="table-container">
+
+        <table>
+
+            <tr>
+                <th>Dimensión</th>
+                <th>Indicador</th>
+                <th>Descripción</th>
+            </tr>
+
+            <tr>
+                <td>Usabilidad</td>
+                <td>Facilidad de uso</td>
+                <td>
+                    Nivel de interacción del usuario
+                    con la aplicación móvil.
+                </td>
+            </tr>
+
+            <tr>
+                <td>Funcionalidad</td>
+                <td>Registro de incidencias</td>
+                <td>
+                    Capacidad del sistema para registrar
+                    correctamente reportes ciudadanos.
+                </td>
+            </tr>
+
+            <tr>
+                <td>Geolocalización</td>
+                <td>Precisión</td>
+                <td>
+                    Exactitud de la ubicación geográfica
+                    de las incidencias reportadas.
+                </td>
+            </tr>
+
+            <tr>
+                <td>Eficiencia</td>
+                <td>Tiempo de respuesta</td>
+                <td>
+                    Tiempo requerido para atender
+                    incidencias urbanas.
+                </td>
+            </tr>
+
+            <tr>
+                <td>Organización</td>
+                <td>Seguimiento</td>
+                <td>
+                    Capacidad del sistema para realizar
+                    trazabilidad de reportes.
+                </td>
+            </tr>
+
+            <tr>
+                <td>Participación ciudadana</td>
+                <td>Nivel de uso</td>
+                <td>
+                    Cantidad de usuarios y reportes
+                    generados mediante la aplicación.
+                </td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <!-- BOTON -->
+
+    <div class="back">
+
+        <a href="modulos.html">
+
+            Volver a módulos
+
+        </a>
+
+    </div>
+
+</section>
+
+</body>
+</html>

@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Problema | Portafolio CTI</title>
+
+<link rel="stylesheet" href="css/styles.css">
+
+<style>
+
+.page{
+    min-height:100vh;
+    padding:120px 8%;
+}
+
+/* HEADER */
+
+.header{
+    text-align:center;
+    margin-bottom:80px;
+}
+
+.header h1{
+
+    font-size:3.5rem;
+
+    margin-bottom:20px;
+
+    color:#2dd4bf;
+}
+
+.header p{
+
+    color:#99c4be;
+
+    font-size:1.1rem;
+}
+
+/* PROBLEMA */
+
+.problem-box{
+
+    background:rgba(15,36,36,0.80);
+
+    padding:50px;
+
+    border-radius:25px;
+
+    border-left:6px solid #0d9488;
+
+    border:1px solid rgba(45,212,191,0.12);
+
+    margin-bottom:70px;
+
+    transition:0.3s;
+}
+
+.problem-box:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.20);
+}
+
+.problem-box h2{
+
+    color:#2dd4bf;
+
+    margin-bottom:25px;
+
+    font-size:2rem;
+}
+
+.problem-box p{
+
+    color:#99c4be;
+
+    line-height:1.9;
+
+    font-size:1.05rem;
+}
+
+/* GRID */
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+
+    margin-top:40px;
+}
+
+/* CARDS */
+
+.card{
+
+    background:rgba(15,36,36,0.80);
+
+    padding:35px;
+
+    border-radius:22px;
+
+    border:1px solid rgba(45,212,191,0.10);
+
+    transition:0.3s;
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    background:rgba(26,60,60,0.92);
+
+    border:1px solid rgba(45,212,191,0.25);
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.20);
+}
+
+.card h3{
+
+    margin-bottom:18px;
+
+    color:#2dd4bf;
+
+    font-size:1.3rem;
+}
+
+.card p{
+
+    color:#99c4be;
+
+    line-height:1.7;
+}
+
+/* IMPACTO */
+
+.impact{
+
+    margin-top:90px;
+
+    background:rgba(15,36,36,0.80);
+
+    border:1px solid rgba(45,212,191,0.12);
+
+    border-radius:25px;
+
+    padding:50px;
+}
+
+.impact h2{
+
+    text-align:center;
+
+    margin-bottom:45px;
+
+    color:#2dd4bf;
+
+    font-size:2.3rem;
+}
+
+.impact-content{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+}
+
+/* ITEMS */
+
+.impact-item{
+
+    background:rgba(26,60,60,0.70);
+
+    padding:30px;
+
+    border-radius:20px;
+
+    border:1px solid rgba(45,212,191,0.10);
+
+    transition:0.3s;
+}
+
+.impact-item:hover{
+
+    transform:translateY(-8px);
+
+    border:1px solid rgba(45,212,191,0.25);
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.20);
+}
+
+.impact-item h3{
+
+    margin-bottom:15px;
+
+    color:#2dd4bf;
+}
+
+.impact-item p{
+
+    color:#99c4be;
+
+    line-height:1.7;
+}
+
+/* BOTON */
+
+.back{
+
+    text-align:center;
+
+    margin-top:80px;
+}
+
+.back a{
+
+    text-decoration:none;
+
+    background:#0d9488;
+
+    color:#ccfbf1;
+
+    padding:16px 34px;
+
+    border-radius:14px;
+
+    font-weight:bold;
+
+    transition:0.3s;
+}
+
+.back a:hover{
+
+    transform:translateY(-5px);
+
+    background:#0f766e;
+
+    box-shadow:0 0 20px rgba(45,212,191,0.18);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .header h1{
+        font-size:2.8rem;
+    }
+
+    .problem-box,
+    .impact{
+        padding:35px;
+    }
+
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+    <h2>CTI</h2>
+
+    <div class="links">
+
+        <a href="index.html">
+            Inicio
+        </a>
+
+        <a href="problema.html">
+            Problema
+        </a>
+
+        <a href="investigacion.html">
+            Investigación
+        </a>
+
+        <a href="objetivos.html">
+            Objetivos
+        </a>
+
+        <a href="marco.html">
+            Marco lógico
+        </a>
+
+    </div>
+
+</nav>
+
+<!-- CONTENIDO -->
+
+<section class="page">
+
+    <!-- TITULO -->
+
+    <div class="header">
+
+        <h1>
+            Planteamiento del Problema
+        </h1>
+
+        <p>
+            Análisis de las dificultades actuales
+            en la gestión de incidencias urbanas.
+        </p>
+
+    </div>
+
+    <!-- PROBLEMA -->
+
+    <div class="problem-box">
+
+        <h2>
+            Descripción del problema
+        </h2>
+
+        <p>
+            El crecimiento acelerado de las ciudades ha generado
+            múltiples desafíos en la gestión de los servicios públicos
+            y el mantenimiento de los espacios urbanos.
+            Actualmente, muchas incidencias como daños en las vías,
+            fallas en el alumbrado público y acumulación de residuos
+            son reportadas mediante mecanismos tradicionales que
+            presentan limitaciones en organización, seguimiento
+            y eficiencia.
+        </p>
+
+        <br>
+
+        <p>
+            La ausencia de herramientas digitales con geolocalización
+            dificulta la identificación precisa de las problemáticas,
+            generando retrasos en la atención por parte de las entidades
+            responsables y afectando la calidad de vida de los ciudadanos.
+        </p>
+
+    </div>
+
+    <!-- TARJETAS -->
+
+    <div class="grid">
+
+        <div class="card">
+
+            <h3>
+                Incidencias urbanas
+            </h3>
+
+            <p>
+                Problemas relacionados con infraestructura vial,
+                alumbrado público, residuos sólidos y deterioro
+                del espacio público.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>
+                Métodos tradicionales
+            </h3>
+
+            <p>
+                Los reportes mediante llamadas, trámites presenciales
+                y redes sociales dificultan la organización
+                y trazabilidad de la información.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>
+                Falta de geolocalización
+            </h3>
+
+            <p>
+                La carencia de herramientas georreferenciadas
+                limita la capacidad de respuesta y priorización
+                de incidencias urbanas.
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- IMPACTO -->
+
+    <div class="impact">
+
+        <h2>
+            Impacto del problema
+        </h2>
+
+        <div class="impact-content">
+
+            <div class="impact-item">
+
+                <h3>
+                    Ciudadanía
+                </h3>
+
+                <p>
+                    Disminución en la calidad de vida
+                    y aumento de inconformidades.
+                </p>
+
+            </div>
+
+            <div class="impact-item">
+
+                <h3>
+                    Entidades públicas
+                </h3>
+
+                <p>
+                    Dificultad para gestionar y priorizar
+                    incidencias urbanas eficientemente.
+                </p>
+
+            </div>
+
+            <div class="impact-item">
+
+                <h3>
+                    Gestión urbana
+                </h3>
+
+                <p>
+                    Procesos lentos, pérdida de información
+                    y baja eficiencia administrativa.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- BOTON -->
+
+    <div class="back">
+
+        <a href="modulos.html">
+
+            Volver a módulos
+
+        </a>
+
+    </div>
+
+</section>
+
+</body>
+</html>

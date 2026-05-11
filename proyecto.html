@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Proyecto | Portafolio CTI</title>
+
+<link rel="stylesheet" href="css/styles.css">
+
+<style>
+
+.page{
+    min-height:100vh;
+    padding:120px 8%;
+}
+
+/* HEADER */
+
+.header{
+    text-align:center;
+    margin-bottom:80px;
+}
+
+.header h1{
+
+    font-size:3.8rem;
+
+    margin-bottom:20px;
+
+    color:#2dd4bf;
+}
+
+.header p{
+
+    color:#99c4be;
+
+    font-size:1.1rem;
+
+    line-height:1.8;
+
+    max-width:850px;
+
+    margin:auto;
+}
+
+/* RESUMEN */
+
+.resume{
+
+    background:rgba(15,36,36,0.80);
+
+    padding:50px;
+
+    border-radius:25px;
+
+    border-left:6px solid #0d9488;
+
+    border:1px solid rgba(45,212,191,0.12);
+
+    margin-bottom:70px;
+
+    transition:0.3s;
+}
+
+.resume:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.20);
+}
+
+.resume h2{
+
+    color:#2dd4bf;
+
+    margin-bottom:25px;
+
+    font-size:2rem;
+}
+
+.resume p{
+
+    color:#99c4be;
+
+    line-height:1.9;
+
+    font-size:1.05rem;
+}
+
+/* GRID */
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+
+    margin-top:50px;
+}
+
+/* CARDS */
+
+.card{
+
+    background:rgba(15,36,36,0.80);
+
+    padding:35px;
+
+    border-radius:22px;
+
+    border:1px solid rgba(45,212,191,0.10);
+
+    transition:0.3s;
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    background:rgba(26,60,60,0.92);
+
+    border:1px solid rgba(45,212,191,0.25);
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.20);
+}
+
+.card h3{
+
+    margin-bottom:18px;
+
+    color:#2dd4bf;
+
+    font-size:1.3rem;
+}
+
+.card p{
+
+    color:#99c4be;
+
+    line-height:1.7;
+}
+
+/* ODS */
+
+.ods{
+
+    margin-top:90px;
+}
+
+.ods h2{
+
+    text-align:center;
+
+    margin-bottom:45px;
+
+    color:#2dd4bf;
+
+    font-size:2.4rem;
+}
+
+/* ODS GRID */
+
+.ods-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+}
+
+/* ODS CARD */
+
+.ods-card{
+
+    background:rgba(15,36,36,0.80);
+
+    padding:35px;
+
+    border-radius:22px;
+
+    text-align:center;
+
+    border:1px solid rgba(45,212,191,0.10);
+
+    transition:0.3s;
+}
+
+.ods-card:hover{
+
+    transform:translateY(-10px);
+
+    border:1px solid rgba(45,212,191,0.25);
+
+    background:rgba(26,60,60,0.92);
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.20);
+}
+
+.ods-card h3{
+
+    color:#2dd4bf;
+
+    margin-bottom:15px;
+
+    font-size:1.4rem;
+}
+
+.ods-card p{
+
+    color:#99c4be;
+
+    line-height:1.7;
+}
+
+/* BOTON */
+
+.back{
+
+    text-align:center;
+
+    margin-top:80px;
+}
+
+.back a{
+
+    text-decoration:none;
+
+    background:#0d9488;
+
+    color:#ccfbf1;
+
+    padding:16px 34px;
+
+    border-radius:14px;
+
+    font-weight:bold;
+
+    transition:0.3s;
+}
+
+.back a:hover{
+
+    transform:translateY(-5px);
+
+    background:#0f766e;
+
+    box-shadow:0 0 20px rgba(45,212,191,0.18);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .header h1{
+        font-size:2.8rem;
+    }
+
+    .resume{
+        padding:35px;
+    }
+
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+    <h2>CTI</h2>
+
+    <div class="links">
+
+        <a href="index.html">
+            Inicio
+        </a>
+
+        <a href="proyecto.html">
+            Proyecto
+        </a>
+
+        <a href="problema.html">
+            Problema
+        </a>
+
+        <a href="objetivos.html">
+            Objetivos
+        </a>
+
+        <a href="variables.html">
+            Variables
+        </a>
+
+        <a href="marco.html">
+            Marco lógico
+        </a>
+
+    </div>
+
+</nav>
+
+<!-- CONTENIDO -->
+
+<section class="page">
+
+    <!-- HEADER -->
+
+    <div class="header">
+
+        <h1>
+            Proyecto CTI
+        </h1>
+
+        <p>
+            Desarrollo de una aplicación móvil con geolocalización
+            para el reporte y gestión de incidencias urbanas
+            en el municipio de Chía.
+        </p>
+
+    </div>
+
+    <!-- RESUMEN -->
+
+    <div class="resume">
+
+        <h2>
+            Descripción general
+        </h2>
+
+        <p>
+            El proyecto propone el desarrollo de una aplicación móvil
+            orientada a optimizar el proceso de reporte y gestión
+            de incidencias urbanas mediante geolocalización.
+            La herramienta permitirá fortalecer la comunicación
+            entre la ciudadanía y las entidades responsables
+            del mantenimiento del espacio público.
+        </p>
+
+        <br>
+
+        <p>
+            La solución tecnológica busca mejorar la eficiencia
+            administrativa, facilitar la organización de reportes
+            y promover una mayor participación ciudadana
+            mediante herramientas digitales modernas.
+        </p>
+
+    </div>
+
+    <!-- TARJETAS -->
+
+    <div class="grid">
+
+        <div class="card">
+
+            <h3>
+                Tecnología
+            </h3>
+
+            <p>
+                Aplicación móvil con sistema de geolocalización
+                y almacenamiento centralizado de reportes.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>
+                Participación ciudadana
+            </h3>
+
+            <p>
+                Los ciudadanos podrán reportar problemáticas
+                urbanas desde sus dispositivos móviles.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>
+                Gestión urbana
+            </h3>
+
+            <p>
+                Optimización de procesos de seguimiento,
+                control y atención de incidencias urbanas.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>
+                Datos georreferenciados
+            </h3>
+
+            <p>
+                Información organizada mediante ubicación
+                geográfica precisa en tiempo real.
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- ODS -->
+
+    <div class="ods">
+
+        <h2>
+            Objetivos de Desarrollo Sostenible
+        </h2>
+
+        <div class="ods-grid">
+
+            <div class="ods-card">
+
+                <h3>
+                    ODS 11
+                </h3>
+
+                <p>
+                    Ciudades y comunidades sostenibles.
+                </p>
+
+            </div>
+
+            <div class="ods-card">
+
+                <h3>
+                    ODS 16
+                </h3>
+
+                <p>
+                    Instituciones eficaces y transparentes.
+                </p>
+
+            </div>
+
+            <div class="ods-card">
+
+                <h3>
+                    ODS 9
+                </h3>
+
+                <p>
+                    Innovación e infraestructura.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- BOTON -->
+
+    <div class="back">
+
+        <a href="modulos.html">
+
+            Volver a módulos
+
+        </a>
+
+    </div>
+
+</section>
+
+</body>
+</html>

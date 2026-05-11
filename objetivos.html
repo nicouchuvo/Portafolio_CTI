@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Objetivos | Portafolio CTI</title>
+
+<link rel="stylesheet" href="css/styles.css">
+
+<style>
+
+.page{
+    padding:120px 8%;
+    min-height:100vh;
+}
+
+/* HEADER */
+
+.title{
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.title h1{
+
+    font-size:3.5rem;
+
+    margin-bottom:20px;
+
+    color:#2dd4bf;
+}
+
+.title p{
+
+    color:#99c4be;
+
+    font-size:1.1rem;
+
+    line-height:1.7;
+}
+
+/* OBJETIVO GENERAL */
+
+.objetivo-general{
+
+    background:rgba(15,36,36,0.80);
+
+    padding:45px;
+
+    border-radius:25px;
+
+    margin-bottom:60px;
+
+    border-left:6px solid #0d9488;
+
+    border:1px solid rgba(45,212,191,0.12);
+
+    transition:0.3s;
+}
+
+.objetivo-general:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.20);
+}
+
+.objetivo-general h2{
+
+    margin-bottom:25px;
+
+    color:#2dd4bf;
+
+    font-size:2rem;
+}
+
+.objetivo-general p{
+
+    line-height:1.9;
+
+    color:#99c4be;
+
+    font-size:1.05rem;
+}
+
+/* GRID */
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+}
+
+/* CARDS */
+
+.card{
+
+    background:rgba(15,36,36,0.80);
+
+    padding:35px;
+
+    border-radius:22px;
+
+    border:1px solid rgba(45,212,191,0.10);
+
+    transition:0.3s;
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    background:rgba(26,60,60,0.92);
+
+    border:1px solid rgba(45,212,191,0.25);
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.20);
+}
+
+/* TITULOS */
+
+.card h3{
+
+    margin-bottom:18px;
+
+    color:#2dd4bf;
+
+    font-size:1.3rem;
+}
+
+/* TEXTO */
+
+.card p{
+
+    color:#99c4be;
+
+    line-height:1.7;
+}
+
+/* BOTON */
+
+.back{
+
+    margin-top:70px;
+
+    text-align:center;
+}
+
+.back a{
+
+    text-decoration:none;
+
+    background:#0d9488;
+
+    color:#ccfbf1;
+
+    padding:16px 34px;
+
+    border-radius:14px;
+
+    font-weight:bold;
+
+    transition:0.3s;
+}
+
+.back a:hover{
+
+    transform:translateY(-5px);
+
+    background:#0f766e;
+
+    box-shadow:0 0 20px rgba(45,212,191,0.18);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .title h1{
+        font-size:2.8rem;
+    }
+
+    .objetivo-general{
+        padding:30px;
+    }
+
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+    <h2>CTI</h2>
+
+    <div class="links">
+
+        <a href="index.html">
+            Inicio
+        </a>
+
+        <a href="problema.html">
+            Problema
+        </a>
+
+        <a href="objetivos.html">
+            Objetivos
+        </a>
+
+        <a href="marco.html">
+            Marco lógico
+        </a>
+
+    </div>
+
+</nav>
+
+<!-- CONTENIDO -->
+
+<section class="page">
+
+    <div class="title">
+
+        <h1>
+            Objetivos del Proyecto
+        </h1>
+
+        <p>
+            Desarrollo de una aplicación móvil con geolocalización
+            para la gestión de incidencias urbanas.
+        </p>
+
+    </div>
+
+    <!-- OBJETIVO GENERAL -->
+
+    <div class="objetivo-general">
+
+        <h2>
+            Objetivo General
+        </h2>
+
+        <p>
+            Diseñar una aplicación móvil con geolocalización que permita optimizar
+            el proceso de reporte y gestión de incidencias urbanas,
+            con el fin de mejorar la comunicación entre la comunidad
+            y las entidades responsables del mantenimiento del espacio público.
+        </p>
+
+    </div>
+
+    <!-- OBJETIVOS ESPECIFICOS -->
+
+    <div class="grid">
+
+        <div class="card">
+
+            <h3>
+                Objetivo 1
+            </h3>
+
+            <p>
+                Identificar las principales necesidades de los ciudadanos
+                en relación con el reporte de incidencias urbanas
+                dentro de la comunidad.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>
+                Objetivo 2
+            </h3>
+
+            <p>
+                Analizar los mecanismos actuales utilizados para reportar
+                problemas en el espacio público y sus limitaciones
+                en términos de eficiencia y seguimiento.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>
+                Objetivo 3
+            </h3>
+
+            <p>
+                Diseñar la estructura funcional de una aplicación móvil
+                que permita registrar incidencias urbanas
+                utilizando geolocalización.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>
+                Objetivo 4
+            </h3>
+
+            <p>
+                Desarrollar un sistema que permita visualizar,
+                almacenar y gestionar los reportes ciudadanos
+                en una base de datos centralizada.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>
+                Objetivo 5
+            </h3>
+
+            <p>
+                Evaluar el potencial impacto de la herramienta tecnológica
+                en la mejora de la gestión de incidencias urbanas
+                y la participación ciudadana.
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- BOTON -->
+
+    <div class="back">
+
+        <a href="modulos.html">
+
+            Volver a módulos
+
+        </a>
+
+    </div>
+
+</section>
+
+</body>
+</html>

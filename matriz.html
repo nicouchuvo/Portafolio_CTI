@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Matriz de consistencia | Portafolio CTI</title>
+
+<link rel="stylesheet" href="css/styles.css">
+
+<style>
+
+.page{
+    padding:120px 5%;
+    min-height:100vh;
+}
+
+/* HEADER */
+
+.header{
+    text-align:center;
+    margin-bottom:80px;
+}
+
+.header h1{
+    font-size:3.8rem;
+    margin-bottom:20px;
+    color:#2dd4bf;
+}
+
+.header p{
+    color:#99c4be;
+    font-size:1.1rem;
+    max-width:700px;
+    margin:auto;
+    line-height:1.7;
+}
+
+/* CONTENEDOR TABLA */
+
+.tabla-container{
+    width:100%;
+    overflow-x:auto;
+    background:rgba(0,0,0,0.35);
+    border-radius:25px;
+    border:1px solid rgba(45,212,191,0.25);
+    box-shadow:0 0 20px rgba(45,212,191,0.15);
+    margin-bottom:60px;
+}
+
+/* TABLA */
+
+.matriz{
+    width:100%;
+    border-collapse:collapse;
+    min-width:1000px;
+}
+
+/* HEADER TABLA */
+
+.matriz thead tr{
+    background:#4a7c3f;
+}
+
+.matriz th{
+    color:white;
+    padding:18px 16px;
+    font-size:0.9rem;
+    text-align:left;
+    border-right:1px solid rgba(255,255,255,0.1);
+}
+
+.matriz th:last-child{
+    border-right:none;
+}
+
+/* CELDAS */
+
+.matriz td{
+    padding:18px 16px;
+    color:#d1d5db;
+    font-size:0.92rem;
+    line-height:1.6;
+    vertical-align:top;
+    border-bottom:1px solid rgba(255,255,255,0.05);
+    border-right:1px solid rgba(255,255,255,0.05);
+}
+
+.matriz td:last-child{
+    border-right:none;
+}
+
+/* FILAS ALTERNAS */
+
+.matriz tbody tr:nth-child(odd){
+    background:rgba(45,212,191,0.04);
+}
+
+.matriz tbody tr:hover{
+    background:rgba(45,212,191,0.09);
+    transition:0.3s;
+}
+
+/* CELDA DESTACADA (dimension) */
+
+.matriz td.dimension{
+    color:#2dd4bf;
+    font-weight:600;
+}
+
+/* BOTON VOLVER */
+
+.back{
+    text-align:center;
+    margin-top:50px;
+}
+
+.back a{
+    text-decoration:none;
+    background:#0d9488;
+    color:#ccfbf1;
+    padding:16px 34px;
+    border-radius:14px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.back a:hover{
+    transform:translateY(-5px);
+    background:#0f766e;
+    box-shadow:0 0 20px rgba(45,212,191,0.18);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .header h1{
+        font-size:2.5rem;
+    }
+
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+    <h2>CTI</h2>
+
+    <div class="links">
+        <a href="index.html">Inicio</a>
+        <a href="modulos.html">Módulos</a>
+    </div>
+
+</nav>
+
+<!-- CONTENIDO -->
+
+<section class="page">
+
+    <div class="header">
+
+        <h1>Matriz de consistencia</h1>
+
+        <p>
+            Estructura investigativa que relaciona el problema,
+            objetivos, variables, dimensiones e indicadores
+            del proyecto de gestión de incidencias urbanas.
+        </p>
+
+    </div>
+
+    <!-- TABLA -->
+
+    <div class="tabla-container">
+
+        <table class="matriz">
+
+            <thead>
+                <tr>
+                    <th>Problema de investigación</th>
+                    <th>Objetivo general</th>
+                    <th>Objetivos específicos</th>
+                    <th>Variable independiente</th>
+                    <th>Variable dependiente</th>
+                    <th>Dimensión</th>
+                    <th>Indicadores</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <!-- FILA 1 -->
+                <tr>
+                    <td rowspan="6">
+                        ¿Cómo optimizar el proceso de reporte y gestión
+                        de incidencias urbanas mediante el uso de una
+                        aplicación móvil con geolocalización en el
+                        municipio de Chía?
+                    </td>
+                    <td rowspan="6">
+                        Diseñar una aplicación móvil con geolocalización
+                        que permita optimizar el proceso de reporte y
+                        gestión de incidencias urbanas en el municipio
+                        de Chía.
+                    </td>
+                    <td>
+                        Identificar las necesidades y expectativas de
+                        los ciudadanos frente al reporte de incidencias
+                        urbanas.
+                    </td>
+                    <td rowspan="6">
+                        Aplicación móvil con geolocalización
+                    </td>
+                    <td rowspan="6">
+                        Optimización del proceso de reporte y gestión
+                        de incidencias urbanas
+                    </td>
+                    <td class="dimension">Usabilidad</td>
+                    <td>
+                        Facilidad de uso de la aplicación /
+                        Nivel de satisfacción del usuario
+                    </td>
+                </tr>
+
+                <!-- FILA 2 -->
+                <tr>
+                    <td>
+                        Analizar los mecanismos actuales de reporte
+                        y gestión de incidencias urbanas.
+                    </td>
+                    <td class="dimension">Funcionalidad</td>
+                    <td>
+                        Registro correcto de incidencias /
+                        Tipos de incidencias gestionadas
+                    </td>
+                </tr>
+
+                <!-- FILA 3 -->
+                <tr>
+                    <td>
+                        Diseñar la estructura y funcionalidades
+                        de la aplicación móvil.
+                    </td>
+                    <td class="dimension">Geolocalización</td>
+                    <td>
+                        Precisión de ubicación /
+                        Visualización en mapa
+                    </td>
+                </tr>
+
+                <!-- FILA 4 -->
+                <tr>
+                    <td>
+                        Desarrollar la aplicación móvil y el sistema
+                        de gestión de incidencias.
+                    </td>
+                    <td class="dimension">Eficiencia</td>
+                    <td>
+                        Tiempo promedio de respuesta /
+                        Reducción de tiempos de gestión
+                    </td>
+                </tr>
+
+                <!-- FILA 5 -->
+                <tr>
+                    <td>
+                        Evaluar el impacto de la aplicación en la
+                        optimización del proceso.
+                    </td>
+                    <td class="dimension">Organización</td>
+                    <td>
+                        Seguimiento de reportes /
+                        Estado de incidencias
+                    </td>
+                </tr>
+
+                <!-- FILA 6 -->
+                <tr>
+                    <td></td>
+                    <td class="dimension">Participación ciudadana</td>
+                    <td>
+                        Nivel de uso de la aplicación /
+                        Número de reportes generados
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <!-- BOTON VOLVER -->
+
+    <div class="back">
+        <a href="modulos.html">Volver a módulos</a>
+    </div>
+
+</section>
+
+</body>
+</html>

@@ -1,0 +1,674 @@
+/* ================================================= */
+/* RESET */
+/* ================================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+/* ================================================= */
+/* BODY */
+/* ================================================= */
+
+body{
+
+    font-family:'Segoe UI',sans-serif;
+
+    background:
+
+    radial-gradient(
+        circle at top left,
+        rgba(45,212,191,0.12),
+        transparent 40%
+    ),
+
+    radial-gradient(
+        circle at bottom right,
+        rgba(13,148,136,0.10),
+        transparent 45%
+    ),
+
+    linear-gradient(
+        135deg,
+        #0c1a1a,
+        #0f2424,
+        #122b2b
+    );
+
+    color:#99c4be;
+
+    min-height:100vh;
+
+    background-attachment:fixed;
+}
+
+/* ================================================= */
+/* NAVBAR */
+/* ================================================= */
+
+.navbar{
+
+    width:100%;
+
+    padding:20px 8%;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    position:fixed;
+
+    top:0;
+
+    background:rgba(12,26,26,0.60);
+
+    backdrop-filter:blur(12px);
+
+    z-index:1000;
+
+    border-bottom:1px solid rgba(45,212,191,0.07);
+}
+
+/* LOGO */
+
+.navbar h2{
+
+    color:#cceae6;
+
+    font-size:1.8rem;
+
+    letter-spacing:1px;
+}
+
+/* LINKS */
+
+.links{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:25px;
+}
+
+.links a{
+
+    color:#99c4be;
+
+    text-decoration:none;
+
+    transition:0.3s;
+
+    font-size:1rem;
+
+    font-weight:500;
+}
+
+.links a:hover{
+
+    color:#2dd4bf;
+}
+
+/* ================================================= */
+/* HERO */
+/* ================================================= */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:40px;
+}
+
+.hero-content{
+    max-width:950px;
+}
+
+/* TITULO */
+
+.hero h1{
+
+    font-size:5rem;
+
+    margin-bottom:25px;
+
+    line-height:1.2;
+
+    color:#2dd4bf;
+
+    font-weight:700;
+}
+
+/* TEXTO */
+
+.hero p{
+
+    font-size:1.3rem;
+
+    line-height:1.8;
+
+    color:#99c4be;
+
+    max-width:850px;
+
+    margin:auto;
+}
+
+/* ================================================= */
+/* AUTORES */
+/* ================================================= */
+
+.autores{
+
+    margin-top:40px;
+
+    display:flex;
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+}
+
+.autores span{
+
+    background:rgba(26,68,68,0.70);
+
+    padding:15px 25px;
+
+    border-radius:15px;
+
+    border:1px solid rgba(45,212,191,0.15);
+
+    color:#cceae6;
+
+    transition:0.3s;
+}
+
+.autores span:hover{
+
+    background:rgba(35,85,85,0.90);
+
+    transform:translateY(-5px);
+
+    border:1px solid rgba(45,212,191,0.30);
+}
+
+/* ================================================= */
+/* BOTONES */
+/* ================================================= */
+
+.btn{
+
+    margin-top:50px;
+
+    display:inline-block;
+
+    padding:18px 40px;
+
+    border-radius:15px;
+
+    text-decoration:none;
+
+    background:#0d9488;
+
+    color:#ccfbf1;
+
+    font-weight:bold;
+
+    transition:0.3s;
+}
+
+.btn:hover{
+
+    transform:translateY(-8px);
+
+    background:#0f766e;
+
+    box-shadow:0 0 20px rgba(45,212,191,0.20);
+}
+
+/* ================================================= */
+/* PAGINAS */
+/* ================================================= */
+
+.page{
+
+    min-height:100vh;
+
+    padding:120px 8%;
+}
+
+/* ================================================= */
+/* HEADERS */
+/* ================================================= */
+
+.header{
+
+    text-align:center;
+
+    margin-bottom:70px;
+}
+
+.header h1{
+
+    font-size:3.5rem;
+
+    margin-bottom:20px;
+
+    color:#2dd4bf;
+}
+
+.header p{
+
+    color:#99c4be;
+
+    font-size:1.1rem;
+
+    line-height:1.7;
+}
+
+/* ================================================= */
+/* GRIDS */
+/* ================================================= */
+
+.cards,
+.grid,
+.variables-grid,
+.ods-grid,
+.impact-content,
+.info{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(380px,420px));
+
+    justify-content:center;
+
+    gap:30px;
+}
+
+/* ================================================= */
+/* TARJETAS */
+/* ================================================= */
+
+.card,
+.variable-card,
+.ods-card,
+.impact-item{
+
+    background:rgba(15,36,36,0.80);
+
+    border:1px solid rgba(45,212,191,0.10);
+
+    border-radius:22px;
+
+    padding:25px;
+
+    transition:0.3s;
+
+    backdrop-filter:blur(10px);
+
+    overflow:hidden;
+
+    width:100%;
+}
+
+/* HOVER */
+
+.card:hover,
+.variable-card:hover,
+.ods-card:hover,
+.impact-item:hover{
+
+    transform:translateY(-8px);
+
+    background:rgba(26,60,60,0.92);
+
+    border:1px solid rgba(45,212,191,0.22);
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.20);
+}
+
+/* ================================================= */
+/* IMAGENES */
+/* ================================================= */
+
+.card img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    margin-bottom:20px;
+
+    display:block;
+}
+
+/* ================================================= */
+/* CONTENIDO */
+/* ================================================= */
+
+.card-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+}
+
+/* ================================================= */
+/* TITULOS */
+/* ================================================= */
+
+.card h2,
+.card h3,
+.variable-card h2,
+.ods h2,
+.section-title h2,
+.problem-box h2,
+.resume h2,
+.question-box h2{
+
+    color:#cceae6;
+
+    margin-bottom:15px;
+}
+
+/* ================================================= */
+/* TEXTOS */
+/* ================================================= */
+
+.card p,
+.variable-card p,
+.ods-card p,
+.impact-item p{
+
+    color:#99c4be;
+
+    line-height:1.7;
+
+    margin-bottom:18px;
+}
+
+/* ================================================= */
+/* BOTONES TARJETAS */
+/* ================================================= */
+
+.card .buttons{
+
+    margin-top:15px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:12px;
+
+    flex-wrap:wrap;
+}
+
+.card .buttons a{
+
+    text-decoration:none;
+
+    padding:12px 18px;
+
+    border-radius:12px;
+
+    font-weight:bold;
+
+    transition:0.3s;
+
+    background:#0d9488;
+
+    color:#ccfbf1;
+
+    font-size:0.92rem;
+}
+
+.card .buttons a:hover{
+
+    transform:translateY(-4px);
+
+    background:#0f766e;
+
+    box-shadow:0 0 15px rgba(45,212,191,0.25);
+}
+
+/* ================================================= */
+/* CAJAS GRANDES */
+/* ================================================= */
+
+.problem-box,
+.resume,
+.question-box,
+.objetivo-general,
+.impact{
+
+    background:rgba(15,36,36,0.80);
+
+    padding:50px;
+
+    border-radius:25px;
+
+    border-left:5px solid #0d9488;
+
+    border:1px solid rgba(45,212,191,0.10);
+
+    backdrop-filter:blur(10px);
+}
+
+/* ================================================= */
+/* TABLAS */
+/* ================================================= */
+
+.table-container{
+    overflow-x:auto;
+}
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:rgba(15,36,36,0.80);
+
+    border-radius:20px;
+
+    overflow:hidden;
+}
+
+/* HEADER TABLA */
+
+th{
+
+    background:#0d9488;
+
+    color:#ccfbf1;
+
+    padding:18px;
+
+    text-align:left;
+}
+
+/* CELDAS */
+
+td{
+
+    padding:18px;
+
+    border-bottom:1px solid rgba(45,212,191,0.06);
+
+    color:#99c4be;
+
+    line-height:1.6;
+}
+
+/* ================================================= */
+/* PDF */
+/* ================================================= */
+
+.pdf-container{
+
+    width:100%;
+
+    height:800px;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(45,212,191,0.10);
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.20);
+}
+
+iframe{
+
+    width:100%;
+
+    height:100%;
+
+    border:none;
+}
+
+/* ================================================= */
+/* BOTONES PAGINAS */
+/* ================================================= */
+
+.buttons,
+.back{
+
+    margin-top:60px;
+
+    display:flex;
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+}
+
+.buttons a,
+.back a{
+
+    text-decoration:none;
+
+    padding:15px 30px;
+
+    border-radius:12px;
+
+    font-weight:bold;
+
+    transition:0.3s;
+
+    background:#0d9488;
+
+    color:#ccfbf1;
+}
+
+.buttons a:hover,
+.back a:hover{
+
+    transform:translateY(-5px);
+
+    background:#0f766e;
+
+    box-shadow:0 0 20px rgba(45,212,191,0.20);
+}
+
+/* ================================================= */
+/* FOOTER */
+/* ================================================= */
+
+footer{
+
+    text-align:center;
+
+    padding:30px;
+
+    color:#4d8c85;
+}
+
+/* ================================================= */
+/* RESPONSIVE */
+/* ================================================= */
+
+@media(max-width:768px){
+
+    .navbar{
+
+        flex-direction:column;
+
+        gap:15px;
+    }
+
+    .links{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+    }
+
+    .hero h1{
+        font-size:3rem;
+    }
+
+    .header h1{
+        font-size:2.5rem;
+    }
+
+    .hero p{
+        font-size:1.1rem;
+    }
+
+    .problem-box,
+    .resume,
+    .question-box,
+    .objetivo-general,
+    .impact{
+
+        padding:30px;
+    }
+
+    .pdf-container{
+        height:600px;
+    }
+
+    .cards,
+    .grid,
+    .variables-grid,
+    .ods-grid,
+    .impact-content,
+    .info{
+
+        grid-template-columns:1fr;
+    }
+
+    .card img{
+
+        height:200px;
+    }
+}
